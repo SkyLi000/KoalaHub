@@ -84,7 +84,7 @@ getgenv().settings = {
         ignoreMythicals = false
     },
     guis = {
-        keycodes = {}
+        keycodes = {"Rainbow Machine" = "R","Dark Matter Machine" = "T", "Gold Machine" = "G", "Fuse Machine" = "F", "Pet Collection" = "P", "Merchant" = "M", "Bank" = "B", "Enchant" = "E"}
     }
 }
 local tempSettings
@@ -395,9 +395,9 @@ end
 
 
 --UI Lib
-function createUILibrary()
+function LoadUI()
     --Start Functions
-    local UILib = loadstring(game:HttpGet("https://raw.githubusercontent.com/SkyLi000/PetSimXScripts/Library"))()
+    local UILib = loadstring(game:HttpGet("https://raw.githubusercontent.com/SkyLi000/PetSimXScripts/main/Library"))()
     local UILib = UILib.CreateWindow("Pet Sim X", (scriptVer))
 
     --Tabs
@@ -928,7 +928,7 @@ function createUILibrary()
         getgenv().settings.game.statTrackers = isToggled
         if isToggled then
             if not enabledBefore then
-                loadstring(game:HttpGet("https://hugegames.io/stats))()
+                loadstring(game:HttpGet("https://hugegames.io/stats"))()
                 enabledBefore = true
             else
                 menus = game:GetService("Players").LocalPlayer:WaitForChild("PlayerGui"):WaitForChild("Main"):WaitForChild("Right")
@@ -2084,4 +2084,4 @@ function createUILibrary()
 
 end
 
-createUILibrary()
+LoadUI()
