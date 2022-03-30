@@ -84,7 +84,15 @@ getgenv().settings = {
         ignoreMythicals = false
     },
     guis = {
-        keycodes = {"Rainbow Machine" = "R","Dark Matter Machine" = "T", "Gold Machine" = "G", "Fuse Machine" = "F", "Pet Collection" = "P", "Merchant" = "M", "Bank" = "B", "Enchant" = "E"}
+        keycodes = {
+            ["Rainbow Machine"] = "R",
+            ["Dark Matter Machine"] = "T",
+            ["Gold Machine"] = "G", ["Fuse Machine"] = "F",
+            ["Pet Collection"] = "P",
+            ["Merchant"] = "M", 
+            ["Bank"] = "B",
+            ["Enchant"] = "E"
+        }
     }
 }
 local tempSettings
