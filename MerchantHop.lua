@@ -72,7 +72,7 @@ end)
 if not game:IsLoaded() then
     game.Loaded:Wait()
 end
-local console = loadstring(game:HttpGet("https://raw.githubusercontent.com/SkyLi000/PetSimXScripts/main/Console"))()
+local console = loadstring(game:HttpGet("https://raw.githubusercontent.com/SkyLi000/PetSimXScripts/main/Console.lua"))()
 console.clear()
 console.log('New Server Joined. Waiting For Script To Load')
 local Lib = require(game.ReplicatedStorage:WaitForChild("Framework"):WaitForChild("Library"))
