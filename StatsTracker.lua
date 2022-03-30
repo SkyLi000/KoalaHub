@@ -1,3 +1,4 @@
+local Library = require(game.ReplicatedStorage:WaitForChild("Framework"):WaitForChild("Library"))
 local Save = Library.Save.Get
 local Commas = Library.Functions.Commas 
 local Types = {} 
