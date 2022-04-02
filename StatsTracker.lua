@@ -31,19 +31,13 @@ if err then
 	print(err) 
 end 
 succ, err = pcall(function() 
-	Menus['Gingerbread'].LayoutOrder = 99994 
+	Menus['Fantasy Coins'].LayoutOrder = 99994 
 end) 
 if err then 
 	print(err) 
 end 
 succ, err = pcall(function() 
-	Menus['Fantasy Coins'].LayoutOrder = 99996 
-end) 
-if err then 
-	print(err) 
-end 
-succ, err = pcall(function() 
-	Menus.Coins.LayoutOrder = 99998 end) 
+	Menus.Coins.LayoutOrder = 99996 end) 
 if err then 
 	print(err) 
 end 
