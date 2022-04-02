@@ -21,7 +21,7 @@ if game.PlaceId == 6284583030 or game.PlaceId == 7722306047 then
     end
     
     function Send(Name, Nickname, Strength, Rarity, Thumbnail, Formation, Color, NewPowers, nth)
-        local Webhook = _G.Webhook
+        local Webhook = getgenv().Settings.DiscordPets.Webhook
         local msg = {
             ["username"] = "Pet Webhook",
             ["embeds"] = {
@@ -93,6 +93,8 @@ if game.PlaceId == 6284583030 or game.PlaceId == 7722306047 then
     
     if _G.Connection then _G.Connection:Disconnect() end
     _G.Connection = game:GetService("Players").LocalPlayer.PlayerGui.Inventory.Frame.Main.Pets.ChildAdded:Connect(function(child)
-        SendWebhook(child.Name)
+        if getgenv().Settings.DiscordPets.Enabled == true then
+            SendWebhook(child.Name)
+        end
     end)
 end
