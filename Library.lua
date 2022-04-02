@@ -123,7 +123,7 @@ function UILib.CreateWindow(libName, version, logoId)
     version = version or game:GetService("Players").LocalPlayer.Name
     --
 
-    UILibrary.Name = "UILibrary" .. libName
+    UILibrary.Name = libName
     UILibrary.Parent = game.CoreGui
     UILibrary.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
 
