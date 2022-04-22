@@ -13,7 +13,7 @@ spawn(function()
 	function Teleport()
 		wait(5)
 		game:GetService("TeleportService"):Teleport(6284583030, game.Players.LocalPlayer)
-	end
+	end)
     end
 end)
 
