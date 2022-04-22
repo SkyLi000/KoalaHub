@@ -11,7 +11,9 @@ spawn(function()
 	local actualHour = os.date("!*t").hour
 	local Deleted = false
 	function Teleport()
-        game:GetService("TeleportService"):Teleport(6284583030, game.Players.LocalPlayer)
+		wait(5)
+		game:GetService("TeleportService"):Teleport(6284583030, game.Players.LocalPlayer)
+	end
     end
 end)
 
